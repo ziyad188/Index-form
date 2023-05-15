@@ -1,0 +1,22 @@
+ /* CSS styles for the input fields */
+ .edit-field {
+    width: 150px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* CSS styles for the buttons */
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* CSS styles for the buttons on hover */
+  .button:hover {
+    background-color: #45a049;
+  }
