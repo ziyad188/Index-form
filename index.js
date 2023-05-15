@@ -190,9 +190,12 @@ function enableEdit(row) {
 //add new row
   function addRow() {
     const newRow = createRow(rowCount);
-    container.appendChild(newRow);
-    enableRowFunctionality(newRow, rowCount);
-    rowCount++;
+  const firstRow = container.firstChild;
+  container.insertBefore(newRow, firstRow);
+  enableRowFunctionality(newRow, rowCount);
+  rowCount++;
+  updateRowIDs();
+    
     console.log(rowCount);
   }
  //adding this functianality
